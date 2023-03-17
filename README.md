@@ -12,26 +12,29 @@
 The Notion-Desktop is a Electron desktop client for Notion.
 
 **Attention!**
-This application was initially developed for unix like environments, if you want to run it in other environments make sure that all dependencies are satisfied.
+This application was initially developed for Linux and Windows environments, if you want to run it in other environments make sure that all dependencies are satisfied.
 
 
 ## Installation
 
-Open the `build/installers` folder and download and install the notion-desktop*.deb.
+1. To compile and install the application, first of all, clone the project or download the zipped source code to your local machine.
 
-
-## Compiling the Project Locally
-
-1. To compile the application, first of all, clone the project or download the zipped source code to your local machine.
 2. Access the project folder and run the command to download the dependencies:
 ```
 $ npm install
 ```
+
 3. run the command to build the application.
 ```
-$ npm run build
+$ npm run build:linux
 ```
-4. Access the `build/installers/` in project and install the generated notion-desktop*.deb package.
+For Linux environments or
+```
+$ npm run build:win
+```
+For Windows environments
+
+4. Access the `build/notion-desktop-*-x64/installers/` in project and install the generated notion-desktop_VERSION_amd64.deb ou notion-desktop_VERSION_amd64.exe packages.
 
 With that the application will be working. Now you can translate your texts locally.
 

@@ -5,9 +5,9 @@ const { app, BrowserWindow, Tray, Menu, shell } = electron;
 const baseURL: string = "https://www.notion.so";
 const height: number = 600;
 const width: number = 980;
+const extensionIcon: string = process.platform == "linux" ? "png" : "ico"; 
 
 let showing: boolean = false;
-
 let mainWindow: Electron.BrowserWindow;
 
 function createWindow() {  
@@ -59,6 +59,7 @@ function render(tray: electron.Tray) {
 
 }
 
+
 function showOrHide() {
   showing = !showing;
   if(!showing)
@@ -82,7 +83,7 @@ app.disableHardwareAcceleration();
 app.whenReady().then(() => {
   createWindow();
 
-  const mainTray = new Tray(path.join(__dirname, "/assets/icons/iconTemplate.png"))
+  const mainTray = new Tray(path.join(__dirname, `/assets/icons/Icon.${extensionIcon}`))
   render(mainTray);
 
   mainWindow.on('close', (e: { preventDefault: () => void; }) => {

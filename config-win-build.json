@@ -1,0 +1,15 @@
+{
+  "dest": "build/installers/",
+  "icon": "dist/assets/icons/Icon.ico",
+  "tags": [
+    "Utility",
+    "Internet",
+    "Network"
+  ],
+  "options": {
+    "name": "Notion-Desktop",
+    "description": "A desktop client for Notion",
+    "arch": "amd64",
+    "exe": "Notion-Desktop"
+  }
+}
