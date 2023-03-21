@@ -83,7 +83,7 @@ app.disableHardwareAcceleration();
 app.whenReady().then(() => {
   createWindow();
 
-  const mainTray = new Tray(path.join(__dirname, `/assets/icons/Icon.${extensionIcon}`))
+  const mainTray = new Tray(path.resolve(__dirname, '..', `assets/icons/Icon.${extensionIcon}`))
   render(mainTray);
 
   mainWindow.on('close', (e: { preventDefault: () => void; }) => {

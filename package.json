@@ -1,6 +1,6 @@
 {
   "name": "notion-desktop",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A desktop client for Notion",
   "main": "dist/main.js",
   "scripts": {
@@ -10,8 +10,8 @@
     "start": "npm run build && electron ./dist/main.js",
     "clean:linux": "rimraf build/notion-desktop-linux-x64",
     "clean:win": "rimraf build/notion-desktop-win32-x64",
-    "bundle:linux64": "electron-packager . notion-desktop --asar --overwrite --platform=linux --arch=x64 --icon=dist/assets/icons/Icon.png --prune=true --out=build/",
-    "bundle:win64": "electron-packager . notion-desktop --asar --overwrite --platform=win32 --arch=x64 --icon=dist/assets/icons/Icon.ico --prune=true --out=build/",
+    "bundle:linux64": "electron-packager . notion-desktop --asar --overwrite --platform=linux --arch=x64 --icon=assets/icons/Icon.png --prune=true --out=build/",
+    "bundle:win64": "electron-packager . notion-desktop --asar --overwrite --platform=win32 --arch=x64 --icon=assets/icons/Icon.ico --prune=true --out=build/",
     "deb:x64": "electron-installer-debian --src build/notion-desktop-linux-x64/ --dest build/notion-desktop-linux-x64/installer/ --arch amd64 --config config-linux-build.json",
     "exe:x64": "electron-installer-windows --src build/notion-desktop-win32-x64/ --dest build/notion-desktop-win32-x64/installer/ --config config-win-build.json",
     "dist:linux": "npm run clean:linux && npm run build && npm run bundle:linux64 && npm run deb:x64",

@@ -1,10 +1,10 @@
 # Notion-Desktop
 
-![](./src/assets/images/Notion-PrintScreen.png)
+![](./assets/images/Notion-PrintScreen.png)
 
-![](./src/assets/images/Notion-PrintScreen1.png)
+![](./assets/images/Notion-PrintScreen1.png)
 
-![](./src/assets/images/Notion-PrintScreen2.png)
+![](./assets/images/Notion-PrintScreen2.png)
 
 
 ## Description

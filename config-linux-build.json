@@ -1,6 +1,6 @@
 {
   "dest": "build/installers/",
-  "icon": "dist/assets/icons/Icon.png",
+  "icon": "assets/icons/Icon.png",
   "categories": [
     "Internet",
     "Network",
